@@ -16,4 +16,7 @@ This app was made with the intention to learn React and JavaScript.
 
 Im working on publishing the website via GitHub pages feature. In the mean while you can clone this repository to your computer and start a react app.
 ###
-You can start the website with the command `npm start`. Use it while you are browsing the project directory with command prompt.
+
+If you have react and NPM installed on your machine, you can simply clone this repository and go to the project directory with command prompt and use the `npm start` command.
+
+Install react with the command `npm install -g create-react-app`. Requires NPM to be installed.
