@@ -5,7 +5,7 @@ function sleep(ms) { // Sleep function that "sleeps" given ms amount
 }
 
 function getRandomInt(max) { // Random function 0-max  ex. (0-255)
-  max = max -1;
+  max = max - 1;
   return Math.floor(Math.random() * max);
 }
 
@@ -49,7 +49,7 @@ async function clearGrid() { // Clears the whole grid
   for (let index = 0; index < pixels.length; index++) {
     var status = document.getElementById("status").textContent;
     var pixelColor = pixels[index].style.backgroundColor;
-    
+
     if (status !== "Status: Stopping") {
       if (pixelColor !== "white" || pixelColor !== "") { // if colour is white skips to next and saves performance
         pixels[index].style.backgroundColor = "white";
@@ -68,7 +68,7 @@ async function fillGrid() { // Fills the whole grid with chosen color
   for (let index = 0; index < pixels.length; index++) {
     var status = document.getElementById("status").textContent;
     var pixelColor = pixels[index].style.backgroundColor;
-    
+
     if (status !== "Status: Stopping") {
       if (pixelColor !== currentColor) { // if colour is chosen color skips to next and saves performance
         pixels[index].style.backgroundColor = currentColor;
@@ -101,14 +101,14 @@ async function fillEmptySpots() { // Fills all the empty pixels with current col
 async function emptyRandom() { // Empties pixels randomly till none left
   var pixels = document.getElementsByClassName("grid");
   var lenght = pixels.length;
-  
+
   var missed = 0; var emptied = 0;
   document.getElementById("status").innerHTML = "Status: Emptying random"
 
   for (let index = 0; index < pixels.length; index++) {
     var status = document.getElementById("status").textContent;
     var random = getRandomInt(lenght); // get random number between 0 and pixel lenght
-    
+
     var color = pixels[random].style.backgroundColor; // chosen pixels color
 
     if (status !== "Status: Stopping") {
@@ -170,7 +170,7 @@ async function fillEmptySpotsRandom() { // Fill empty pixels randomly with rando
   for (let index = 0; index < pixels.length; index++) {
     var status = document.getElementById("status").textContent;
     var color = pixels[index].style.backgroundColor;
-    
+
     if (status !== "Status: Stopping") {
       if (color === "white" || color === "") {
         var id = "color" + getRandomInt(colors.length);
@@ -184,21 +184,21 @@ async function fillEmptySpotsRandom() { // Fill empty pixels randomly with rando
 }
 
 function makeColors() { // Makes color pixels. Colors are stored by names. Full list of 140 names: colors.js
-  var colors = ["Aqua", "Beige", "Black", "Blue", "Coral", "Crimson", 
-  "DarkBlue", "DarkGrey", "DarkOrange", "DarkSalmon", "DarkGreen", "DarkRed",
-  "Grey", "Green", "White", "Yellow"];
-  
+  var colors = ["Aqua", "Beige", "Black", "Blue", "Coral", "Crimson",
+    "DarkBlue", "DarkGrey", "DarkOrange", "DarkSalmon", "DarkGreen", "DarkRed",
+    "Grey", "Green", "White", "Yellow"];
+
   var totalPixels = 0;
   var colorPixels = [];
-  
+
   for (let index = 0; index < colors.length; index++) {
     var id = "color" + totalPixels++;
     var color = colors[index];
-    colorPixels.push({id: id, color: color}); // create and array that has names for values for easier calling
+    colorPixels.push({ id: id, color: color }); // create and array that has names for values for easier calling
   }
 
   return colorPixels.map(item => (
-    <div className="colorBox" id={item.id} style={{backgroundColor: item.color}} onClick={() => changeColor(item.id)}/>
+    <div className="colorBox" id={item.id} style={{ backgroundColor: item.color }} onClick={() => changeColor(item.id)} />
   ))
 }
 
@@ -207,11 +207,11 @@ function makeGrid() { // Makes the grid and empty pixels
   var pixelAmount = 2100; // how many pixels to create
 
   for (let index = 0; index < pixelAmount; index++) {
-    pixels.push({id: index, class: "grid"}); // create and array that has names for values for easier calling
+    pixels.push({ id: index, class: "grid" }); // create and array that has names for values for easier calling
   }
 
   return pixels.map(item => (
-      <div className={item.class} id={item.id} onClick={() => changePixel(item.id)}/>
+    <div className={item.class} id={item.id} onClick={() => changePixel(item.id)} />
   ))
 }
 
@@ -227,15 +227,15 @@ function App() { // "main" function. Creates the html and calls different functi
         <h1 id="r">R</h1>
         <h1 id="y">Y</h1>
       </h1>
-      
+
       <div className="colorContainer">
         <h2 className="colorHeader">Current color:</h2>
-        <div className="colorBox" id="color"/>
-          <div className="colorOuter">
-            {makeColors()}
-          </div>
+        <div className="colorBox" id="color" />
+        <div className="colorOuter">
+          {makeColors()}
+        </div>
       </div>
-      
+
       <div className="gridBox">
         <button onClick={() => clearGrid()}>Clear pixels</button>
         <button onClick={() => fillGrid()}>Fill all pixels</button>
@@ -251,13 +251,13 @@ function App() { // "main" function. Creates the html and calls different functi
       </div>
 
       <h1>Stats:</h1>
-      <h2 className="statsFilled" style={{marginLeft: "650px"}}>Filled pixels:</h2> 
-      <h2 className="statsFilled" style={{marginLeft: "10px"}} id="statsFilled">0</h2>
-      <h2 className="statsEmptied" style={{marginLeft: "650px"}}>Emptied pixels:</h2> 
-      <h2 className="statsEmptied" style={{marginLeft: "10px"}} id="statsEmptied">0</h2>
+      <h2 className="statsFilled" style={{ marginLeft: "650px" }}>Filled pixels:</h2>
+      <h2 className="statsFilled" style={{ marginLeft: "10px" }} id="statsFilled">0</h2>
+      <h2 className="statsEmptied" style={{ marginLeft: "650px" }}>Emptied pixels:</h2>
+      <h2 className="statsEmptied" style={{ marginLeft: "10px" }} id="statsEmptied">0</h2>
       <h2 id="statsEmpty">Randomly emptied ones: 0</h2>
       <h2 id="statsMissed">Randomly missed ones: 0</h2>
-      <button style={{marginLeft: "700px"}} onClick={() => clearStats()}>Clear stats</button>
+      <button style={{ marginLeft: "700px" }} onClick={() => clearStats()}>Clear stats</button>
     </div>
   );
 }
