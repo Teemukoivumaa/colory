@@ -1,0 +1,91 @@
+
+h1, h2 { 
+  text-align: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  text-align: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: medium;
+}
+
+#status { /* This is status header. It controls stopping */
+  visibility: hidden;
+}
+
+#title, #c, #O, #l, #o, #r, #y {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1;
+  font-family: "Montserrat Light Alt1";
+  font-variant-ligatures: none;
+  text-align: center;
+  text-anchor: middle;
+  display: inline-block;
+}
+
+#title {padding-left: 45%;}
+#c { color: rgb(253, 182, 29); }
+#O { color: rgb(203, 182, 29); }
+#l { color: rgb(164, 156, 78); }
+#o { color: rgb(89, 134, 121); }
+#r { color: rgb(89, 134, 121); }
+#y { color: rgb(0, 108, 170); }
+
+
+.statsFilled, .statsEmptied {
+  display: inline-flex;
+}
+
+.colorContainer {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.colorHeader {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.colorOuter {
+  width: 97.9%;
+  height: auto;
+  line-height: 0;
+}
+
+.colorBox { /* Color boxes */
+  box-sizing: border-box;
+  display: inline-block;   
+  margin-left: 10px;
+  cursor: pointer;
+  border: 2px solid black;
+  width: 35px;
+  height: 35px;
+}
+
+.gridBox {
+  box-sizing: border-box;
+  padding: 60px;
+  position: relative;
+}
+
+.gridOuterLayer{ /* Pixels outerlayer and top & left border */
+  width: 1350.5px;
+  height: auto;
+  line-height: 0;
+  border-left: 2.5px solid black;
+  border-top: 2.5px solid black;
+}
+
+.grid { /* Pixels */
+  box-sizing: border-box; 
+  display: inline-block;           
+  border-right: 2.5px solid black;
+  border-bottom: 2.5px solid black;
+  width: 18px;
+  height: 18px;
+}
