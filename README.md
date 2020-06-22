@@ -1,5 +1,7 @@
-# COLORY
-Fun React &amp; JS app that lets you draw images and play with pixels.
+# Colory
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). <br/>
+
+Fun React &amp; JS app that lets you draw images and play with pixels. <br />
 This app was made with the intention to learn React and JavaScript.
 ![Colory](/images/colory.png)
 ## Features
