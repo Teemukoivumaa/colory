@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/colory/static/css/main.109600a9.chunk.css",
+    "main.js": "/colory/static/js/main.402621bf.chunk.js",
+    "main.js.map": "/colory/static/js/main.402621bf.chunk.js.map",
+    "runtime-main.js": "/colory/static/js/runtime-main.1f6fc5b4.js",
+    "runtime-main.js.map": "/colory/static/js/runtime-main.1f6fc5b4.js.map",
+    "static/js/2.657e3f4e.chunk.js": "/colory/static/js/2.657e3f4e.chunk.js",
+    "static/js/2.657e3f4e.chunk.js.map": "/colory/static/js/2.657e3f4e.chunk.js.map",
+    "index.html": "/colory/index.html",
+    "precache-manifest.64395f0bcddb003c72a7c5a44fb756f0.js": "/colory/precache-manifest.64395f0bcddb003c72a7c5a44fb756f0.js",
+    "service-worker.js": "/colory/service-worker.js",
+    "static/css/main.109600a9.chunk.css.map": "/colory/static/css/main.109600a9.chunk.css.map",
+    "static/js/2.657e3f4e.chunk.js.LICENSE.txt": "/colory/static/js/2.657e3f4e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f6fc5b4.js",
+    "static/js/2.657e3f4e.chunk.js",
+    "static/css/main.109600a9.chunk.css",
+    "static/js/main.402621bf.chunk.js"
+  ]
+}
