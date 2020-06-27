@@ -23,13 +23,16 @@ Colory is live with GitHub pages! You can use this app in this address:
 
 ## Installation
 
-If you have react and NPM installed on your machine, you can simply clone this repository and go to the project directory with command prompt and use the `npm start` command.
-
-Install react with the command `npm install -g create-react-app`. Requires NPM to be installed.
+1. Clone this repository to your local computer.
+2. Navigate to project folder <br />
+2.1 Install react with the command `npm install react --save`. Requires NPM to be installed.
+3. Run project with `npm run start`
+4. Page will open in your default browser in address `localhost:3000\colory`
+5. Have fun!
 
 ## Meta
 
-Teemu Koivumaa
+Made by Teemu Koivumaa
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
@@ -37,5 +40,6 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Deployment of React app to GitHub pages
 
-I found this tutorial by yribenjamin to be extremely simple and helpfull.
-[Tutorial](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
+I found this tutorial by yribenjamin to be extremely simple and helpful. 
+
+[Tutorial | How to deploy react app in github pages](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
