@@ -36,7 +36,8 @@ Made by Teemu Koivumaa
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[My GitHub page](https://github.com/Teemukoivumaa)
+[My GitHub page](https://github.com/Teemukoivumaa) <br />
+[My LinkedIn page](https://www.linkedin.com/in/teemukoivumaa)
 
 ## Deployment of React app to GitHub pages
 
