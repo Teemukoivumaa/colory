@@ -30,6 +30,10 @@ Colory is live with GitHub pages! You can use this app in this address:
 4. Page will open in your default browser in address `localhost:3000\colory`
 5. Have fun!
 
+This project also has an Dockerfile you can get from here that automates installation process.
+
+### [Dockerfile](https://hub.docker.com/r/teemukoivumaa/colory)
+
 ## Meta
 
 Made by Teemu Koivumaa
