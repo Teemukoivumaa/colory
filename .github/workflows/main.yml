@@ -41,8 +41,7 @@ jobs:
             registry.heroku.com \
             --password-stdin
           docker build \
-            --file ${DOCKERFILE_NAME} \
-            ${DOCKER_OPTIONS} \
+            --file ${DOCKERFILE_NAME}
             --tag registry.heroku.com/${HEROKU_APP_NAME}/web .
           heroku container:push web --app ${HEROKU_APP_NAME}
           heroku container:release web --app ${HEROKU_APP_NAME}
