@@ -12,4 +12,4 @@ COPY ./ ./
 RUN npm install --save serve
 RUN npm audit fix
 
-CMD ["npm", "serve"]
+CMD ["npm", "start"]
