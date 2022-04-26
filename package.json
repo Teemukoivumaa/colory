@@ -15,8 +15,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "serve": "serve -s build",
+    //"start": "react-scripts start",
+    "start": "serve -s build", //This is used for heroku builds
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
