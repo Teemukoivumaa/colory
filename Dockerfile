@@ -6,10 +6,10 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y nodejs
 RUN node -v && npm -v
 
-WORKDIR /usr/src/
-RUN git clone https://github.com/Teemukoivumaa/colory.git
-WORKDIR /usr/src/colory
+WORKDIR /usr/src/app
+COPY ./ ./
 
 RUN npm install
+RUN npm audit fix
 
-CMD npm start
+CMD ["npm", "start"]
