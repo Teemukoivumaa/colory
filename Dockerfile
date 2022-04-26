@@ -9,7 +9,7 @@ RUN node -v && npm -v
 WORKDIR /usr/src/app
 COPY ./ ./
 
-RUN npm install
+RUN npm install --save serve
 RUN npm audit fix
 
 CMD ["npm", "start"]
