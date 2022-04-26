@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-EXPOSE 3000
+EXPOSE 80
 
 RUN apt-get update && apt-get install -y curl git
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
